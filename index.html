@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sharmin Sultana Ruby | Certified Google Ads Expert</title>
+<meta name="description" content="Sharmin Sultana Ruby - Certified Google Ads Expert & Fiverr Seller. Building and scaling Google Ads campaigns that deliver measurable ROI worldwide. Available 24/7." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root {
+    --bg: #07081A; --bg-2: #0C0A24; --bg-3: #120B36;
+    --line: rgba(255, 255, 255, 0.08);
+    --line-strong: rgba(255, 255, 255, 0.16);
+    --ink: #E9ECFA; --ink-soft: #A6ADC8; --ink-faint: #6B7299;
+    --neon-blue: #3D7BFF; --neon-cyan: #00D4FF; --neon-violet: #A855F7; --neon-purple: #7C3AED;
+    --g-blue: #4285F4; --g-yellow: #FBBC04; --g-green: #34A853; --g-red: #EA4335;
+  }
+  * { -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .font-display { font-family: 'Bricolage Grotesque', 'Manrope', sans-serif; letter-spacing: -0.02em; }
+  .font-head { font-family: 'Manrope', sans-serif; letter-spacing: -0.015em; }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+  ::selection { background: var(--neon-violet); color: white; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--neon-blue), var(--neon-violet)); border-radius: 6px; }
+  .bg-deep { background: radial-gradient(1200px 700px at 80% -10%, rgba(124,58,237,0.25), transparent 60%), radial-gradient(900px 600px at 10% 10%, rgba(61,123,255,0.18), transparent 60%), radial-gradient(900px 700px at 50% 110%, rgba(168,85,247,0.18), transparent 65%), linear-gradient(180deg, #07081A 0%, #0C0A24 60%, #120B36 100%); }
+  .bg-panel { background: linear-gradient(180deg, rgba(124,58,237,0.06) 0%, rgba(61,123,255,0.04) 100%), #0A0B22; }
+  .glow-line { background: linear-gradient(90deg, transparent, rgba(168,85,247,0.6), rgba(61,123,255,0.6), transparent); height: 1px; }
+  .glass { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid var(--line); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 22px; transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .35s ease, box-shadow .35s ease; }
+  .glass:hover { transform: translateY(-4px); border-color: var(--line-strong); box-shadow: 0 30px 60px -30px rgba(124,58,237,0.45); }
+  .glass-strong { background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03)); border: 1px solid var(--line-strong); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; }
+  .chip { display: inline-flex; align-items:center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid var(--line); font-size: 12px; font-weight: 600; color: var(--ink-soft); }
+  .g-dot { width: 8px; height: 8px; border-radius: 999px; display: inline-block; }
+  .g-dot.blue { background: var(--g-blue); } .g-dot.yellow { background: var(--g-yellow); } .g-dot.green { background: var(--g-green); } .g-dot.red { background: var(--g-red); }
+  .neon-dot { background: var(--neon-blue); box-shadow: 0 0 12px var(--neon-blue); }
+  .neon-dot.violet { background: var(--neon-violet); box-shadow: 0 0 12px var(--neon-violet); }
+  .pill { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; font-weight: 700; font-size: 14px; transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; cursor: pointer; text-decoration: none; }
+  .pill-primary { background: linear-gradient(135deg, var(--neon-blue) 0%, var(--neon-violet) 100%); color: white; box-shadow: 0 14px 40px -16px rgba(124,58,237,0.7), inset 0 1px 0 rgba(255,255,255,0.2); }
+  .pill-primary:hover { transform: translateY(-2px); filter: brightness(1.08); }
+  .pill-ghost { background: rgba(255,255,255,0.04); color: var(--ink); border: 1px solid var(--line-strong); }
+  .pill-ghost:hover { transform: translateY(-2px); background: rgba(255,255,255,0.08); border-color: rgba(168,85,247,0.55); }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-track { animation: marquee 38s linear infinite; }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .rise { animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(52,168,83,0.6); } 50% { box-shadow: 0 0 0 10px rgba(52,168,83,0); } }
+  .live-dot { animation: pulseGlow 2.2s ease-out infinite; }
+  @keyframes floatY { 0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-14px) rotate(var(--r, 0deg)); } }
+  .floating { animation: floatY 9s ease-in-out infinite; }
+  @keyframes nudge { 0%,100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+  .nudge { animation: nudge 1.4s ease-in-out infinite; }
+  .num-xl { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; letter-spacing: -0.04em; line-height: 0.95; }
+  .grid-overlay { background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 56px 56px; }
+  input, textarea, select { color: var(--ink); background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; width: 100%; font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s ease; }
+  input:focus, textarea:focus, select:focus { border-color: var(--neon-violet); }
+  input::placeholder, textarea::placeholder { color: var(--ink-faint); }
+  select option { background: #0C0A24; color: white; }
+  label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; color: var(--ink-soft); }
+  .svc-pill { display:flex; align-items:center; gap:12px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,0.03); cursor: pointer; transition: all .2s ease; }
+  .svc-pill input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--neon-violet); }
+  .svc-pill.active { border-color: var(--neon-violet); background: rgba(168,85,247,0.12); box-shadow: 0 0 24px rgba(168,85,247,0.2); }
+  .u-toast { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 14px 22px; border-radius: 12px; font-weight: 600; font-size: 14px; z-index: 100; box-shadow: 0 18px 40px -12px rgba(0,0,0,.6); }
+  .u-toast.success { background: linear-gradient(135deg,#10B981,#059669); color: white; }
+  .u-toast.error { background: linear-gradient(135deg,#EF4444,#B91C1C); color: white; }
+  [data-anim="reveal"] { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+  [data-anim="reveal"].in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body class="bg-[#07081A]">
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all py-4">
+  <div class="mx-auto max-w-7xl px-4">
+    <div id="navbar-pill" class="flex items-center justify-between rounded-full border border-white/10 bg-black/40 backdrop-blur-xl px-4 sm:px-6 py-2.5">
+      <a href="#top" class="flex items-center gap-2.5">
+        <svg width="28" height="28" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+        <div class="leading-tight">
+          <div class="font-head font-extrabold text-[15px] text-white">Sharmin <span class="bg-gradient-to-r from-[#3D7BFF] to-[#A855F7] bg-clip-text text-transparent">Ruby</span></div>
+          <div class="text-[10px] uppercase tracking-[0.18em] text-white/55 font-semibold">Google Ads Specialist</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="#services" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">Services</a>
+        <a href="#results" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">Results</a>
+        <a href="#process" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">Process</a>
+        <a href="#certifications" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">Certifications</a>
+        <a href="#reviews" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">Reviews</a>
+        <a href="#about" class="px-3 py-2 text-[13px] font-semibold text-white/70 hover:text-white rounded-full hover:bg-white/5">About</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="hidden sm:inline-flex pill pill-primary !py-2.5 !px-4 text-[13px]">Free Audit <span>→</span></a>
+        <button id="mobile-toggle" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white" aria-label="Menu">
+          <i data-lucide="menu" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-2 rounded-2xl border border-white/10 bg-black/70 backdrop-blur-xl p-2">
+      <a href="#services" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">Services</a>
+      <a href="#results" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">Results</a>
+      <a href="#process" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">Process</a>
+      <a href="#certifications" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">Certifications</a>
+      <a href="#reviews" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">Reviews</a>
+      <a href="#about" class="block px-4 py-3 text-sm font-semibold text-white/85 rounded-xl hover:bg-white/5">About</a>
+      <a href="#contact" class="block mt-1 text-center pill pill-primary !w-full !justify-center">Request Free Audit</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative pt-28 sm:pt-32 pb-16 overflow-hidden bg-deep">
+  <div class="absolute inset-0 grid-overlay opacity-30"></div>
+  <!-- Floating icons -->
+  <div class="pointer-events-none absolute inset-0 overflow-hidden">
+    <div class="absolute floating" style="left:6%;top:16%;opacity:.55;--r:-10deg;animation-delay:0s;filter:drop-shadow(0 12px 30px rgba(124,58,237,.35))">
+      <svg width="56" height="56" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+    </div>
+    <div class="absolute floating" style="left:88%;top:12%;opacity:.5;--r:12deg;animation-delay:1.4s">
+      <svg width="46" height="46" viewBox="0 0 48 48"><rect x="9" y="6" width="9" height="36" rx="4.5" fill="#F9AB00"/><rect x="20" y="18" width="9" height="24" rx="4.5" fill="#E37400"/><rect x="31" y="28" width="9" height="14" rx="4.5" fill="#F9AB00"/></svg>
+    </div>
+    <div class="absolute floating" style="left:78%;top:78%;opacity:.55;--r:-8deg;animation-delay:.7s">
+      <svg width="60" height="60" viewBox="0 0 48 48"><path d="M24 4 L44 24 L24 44 L20 40 L36 24 L20 8 Z" fill="#8AB4F8"/><path d="M24 4 L24 44 L4 24 Z" fill="#246FDB"/><circle cx="24" cy="38" r="3" fill="#246FDB"/></svg>
+    </div>
+    <div class="absolute floating" style="left:12%;top:72%;opacity:.45;--r:-16deg;animation-delay:2.1s">
+      <svg width="44" height="44" viewBox="0 0 48 48"><rect x="9" y="6" width="9" height="36" rx="4.5" fill="#F9AB00"/><rect x="20" y="18" width="9" height="24" rx="4.5" fill="#E37400"/><rect x="31" y="28" width="9" height="14" rx="4.5" fill="#F9AB00"/></svg>
+    </div>
+  </div>
+  <div class="pointer-events-none absolute -top-32 -left-32 w-[460px] h-[460px] rounded-full bg-[#3D7BFF] opacity-25 blur-[120px]"></div>
+  <div class="pointer-events-none absolute top-1/2 -right-32 w-[520px] h-[520px] rounded-full bg-[#A855F7] opacity-25 blur-[140px]"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+    <div class="rise">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="chip"><span class="g-dot green live-dot"></span> Open to Worldwide Clients</span>
+        <span class="chip"><i data-lucide="globe-2" class="w-3 h-3" style="color:#00D4FF"></i> Serving globally</span>
+      </div>
+      <h1 class="font-display mt-6 text-5xl sm:text-6xl lg:text-[78px] leading-[1.02] font-bold text-white">
+        Turning ad spend
+        <span class="block">into
+          <span class="relative inline-block">
+            <span class="bg-gradient-to-r from-[#00D4FF] via-[#3D7BFF] to-[#A855F7] bg-clip-text text-transparent">real revenue</span>
+            <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 16" preserveAspectRatio="none" height="12">
+              <path d="M2 12 C 80 2, 220 2, 298 12" stroke="url(#gline)" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <defs><linearGradient id="gline" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3D7BFF"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs>
+            </svg>
+          </span>
+        </span>
+        <span class="block text-white/95">with Google Ads.</span>
+      </h1>
+      <p class="mt-7 max-w-xl text-[17px] leading-relaxed text-white/70">
+        I am <strong class="text-white">Sharmin Sultana Ruby</strong>, a Certified Google Ads Expert and Fiverr Seller with a data-first approach. I build, manage and scale campaigns that deliver measurable ROI for businesses <span class="text-white font-semibold">all over the world</span>.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#contact" class="pill pill-primary">Get a Free Audit <i data-lucide="arrow-up-right" class="w-4 h-4 nudge"></i></a>
+        <a href="https://wa.me/8801675472781?text=Hi%20Sharmin%2C%20I%20want%20a%20free%20Google%20Ads%20audit." target="_blank" rel="noreferrer" class="pill pill-ghost"><i data-lucide="message-circle" class="w-4 h-4" style="color:#34A853"></i> Chat on WhatsApp</a>
+      </div>
+      <div class="mt-12 grid grid-cols-3 gap-4 max-w-lg">
+        <div><div class="num-xl text-4xl sm:text-5xl bg-gradient-to-br from-white via-white to-[#A855F7] bg-clip-text text-transparent">40+</div><div class="mt-1 text-[11px] uppercase tracking-wider font-semibold text-white/55">Campaigns Launched</div></div>
+        <div><div class="num-xl text-4xl sm:text-5xl bg-gradient-to-br from-white via-white to-[#A855F7] bg-clip-text text-transparent">3.8x</div><div class="mt-1 text-[11px] uppercase tracking-wider font-semibold text-white/55">Avg. ROAS</div></div>
+        <div><div class="num-xl text-4xl sm:text-5xl bg-gradient-to-br from-white via-white to-[#A855F7] bg-clip-text text-transparent">$2M+</div><div class="mt-1 text-[11px] uppercase tracking-wider font-semibold text-white/55">Ad Spend Managed</div></div>
+      </div>
+      <div class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/70">
+        <span class="inline-flex items-center gap-2"><i data-lucide="badge-check" class="w-3.5 h-3.5" style="color:#00D4FF"></i> Certified Google Ads Expert</span>
+        <span class="opacity-30">/</span>
+        <a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-white transition"><i data-lucide="linkedin" class="w-3.5 h-3.5" style="color:#3D7BFF"></i> LinkedIn</a>
+        <span class="opacity-30">/</span>
+        <span class="inline-flex items-center gap-2"><span style="color:#1DBF73;font-weight:700">●</span> Fiverr Seller</span>
+      </div>
+      <div class="mt-7 inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur px-4 py-3">
+        <div class="relative">
+          <i data-lucide="clock" class="w-5 h-5" style="color:#00D4FF"></i>
+          <span class="absolute -top-1 -right-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#34A853] live-dot"></span>
+        </div>
+        <div>
+          <div class="text-sm font-bold text-white">Available 24/7</div>
+          <div class="text-[11px] text-white/55 uppercase tracking-wider font-semibold">Reply within minutes on WhatsApp</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rise">
+      <div class="absolute -top-6 -left-6 w-32 h-32 rounded-3xl bg-[#3D7BFF] opacity-30 blur-3xl"></div>
+      <div class="absolute -bottom-6 -right-6 w-40 h-40 rounded-full bg-[#A855F7] opacity-40 blur-3xl"></div>
+      <div class="relative glass-strong p-5 sm:p-6">
+        <div class="relative overflow-hidden rounded-2xl border border-white/10">
+          <div class="absolute inset-0 bg-gradient-to-tr from-[#A855F7]/30 via-transparent to-[#3D7BFF]/30 mix-blend-overlay"></div>
+          <img src="https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/t0cv669e_WhatsApp%20Image%202026-05-23%20at%2011.11.41%20AM.jpeg" alt="Sharmin Sultana Ruby" class="w-full aspect-[4/5] object-cover object-center" />
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/55 backdrop-blur border border-white/15 text-[11px] font-bold uppercase tracking-wider text-white">
+              <svg width="16" height="16" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+              Certified Google Ads Expert
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1DBF73]/95 text-[11px] font-bold uppercase tracking-wider text-white"><span class="g-dot" style="background:white"></span> Fiverr Seller</span>
+          </div>
+        </div>
+        <div class="mt-5 flex items-end justify-between">
+          <div>
+            <div class="font-display text-xl font-bold text-white">Sharmin Sultana Ruby</div>
+            <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55 mt-1">Google Ads Specialist</div>
+          </div>
+          <a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" class="inline-flex h-10 w-10 rounded-xl items-center justify-center bg-[#0A66C2] text-white hover:opacity-90 transition" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-[18px] h-[18px]"></i></a>
+        </div>
+        <div class="mt-4 grid grid-cols-3 gap-2.5">
+          <div class="rounded-xl border border-white/10 bg-white/[0.03] p-3"><div class="text-[10px] uppercase tracking-wider font-semibold text-white/55">CPC</div><div class="font-head font-extrabold text-lg" style="color:#00D4FF">-38%</div></div>
+          <div class="rounded-xl border border-white/10 bg-white/[0.03] p-3"><div class="text-[10px] uppercase tracking-wider font-semibold text-white/55">Conv.</div><div class="font-head font-extrabold text-lg" style="color:#34A853">+210%</div></div>
+          <div class="rounded-xl border border-white/10 bg-white/[0.03] p-3"><div class="text-[10px] uppercase tracking-wider font-semibold text-white/55">Quality</div><div class="font-head font-extrabold text-lg" style="color:#A855F7">9.2/10</div></div>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-2">
+          <a href="https://wa.me/8801675472781?text=Hi%20Sharmin%2C%20I%20want%20a%20free%20Google%20Ads%20audit." target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#25D366] text-black font-bold text-sm hover:opacity-90"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
+          <a href="/cdn-cgi/l/email-protection#295a41485b444047075b5c4b500740474f46694e44484045074a4644165a5c4b434c4a5d146f5b4c4c0c1b196e46464e454c0c1b19684d5a0c1b19685c4d405d" class="inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-black font-bold text-sm hover:opacity-90"><i data-lucide="mail" class="w-4 h-4"></i> Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="relative py-10 border-y border-white/5 bg-[#08091B] overflow-hidden">
+  <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#08091B] to-transparent z-10"></div>
+  <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#08091B] to-transparent z-10"></div>
+  <div class="mx-auto max-w-7xl px-4 mb-4 flex items-center gap-2">
+    <span class="g-dot neon-dot"></span>
+    <span class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55">Industries I Scale Profitably</span>
+  </div>
+  <div id="marquee" class="flex marquee-track gap-3 whitespace-nowrap"></div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="relative py-24 sm:py-28 bg-deep">
+  <div class="absolute inset-0 grid-overlay opacity-20"></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div>
+        <span class="chip"><span class="g-dot neon-dot"></span> What I Offer</span>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 max-w-2xl leading-[1.05] text-white">Google Ads services <span class="bg-gradient-to-r from-[#3D7BFF] to-[#A855F7] bg-clip-text text-transparent">built around results.</span></h2>
+      </div>
+      <p class="text-base text-white/65 max-w-md">Every service is tailored to your business goals. No fixed packages, strategies built around your specific market and budget.</p>
+    </div>
+    <div id="services-grid" class="grid md:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section id="results" class="relative py-24 sm:py-28 bg-panel overflow-hidden">
+  <div class="pointer-events-none absolute -top-32 -left-24 w-96 h-96 rounded-full bg-[#3D7BFF] opacity-20 blur-3xl"></div>
+  <div class="pointer-events-none absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#A855F7] opacity-20 blur-3xl"></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div>
+        <span class="chip"><span class="g-dot neon-dot"></span> Proven Results</span>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] max-w-3xl text-white">Real campaigns. <span class="block bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">Real numbers.</span></h2>
+      </div>
+      <p class="max-w-sm text-white/65 text-base">Every figure below is from an actual client campaign. No inflated promises.</p>
+    </div>
+    <div id="results-grid" class="grid lg:grid-cols-2 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="relative py-24 sm:py-28 bg-deep overflow-hidden">
+  <div class="absolute inset-0 grid-overlay opacity-20"></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="chip"><span class="g-dot neon-dot violet"></span> Work Progress</span>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] max-w-2xl text-white">How I work <span class="bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">end to end</span>.</h2>
+      </div>
+      <p class="text-base text-white/65 max-w-md">A structured 4-step process, from discovery to ongoing growth. Transparent, communicative, results-focused.</p>
+    </div>
+    <div id="process-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="relative py-24 sm:py-28 bg-deep overflow-hidden">
+  <div class="pointer-events-none absolute top-20 right-0 w-[480px] h-[480px] rounded-full bg-[#A855F7] opacity-15 blur-[120px]"></div>
+  <div class="pointer-events-none absolute bottom-0 left-0 w-[420px] h-[420px] rounded-full bg-[#3D7BFF] opacity-15 blur-[120px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="chip"><i data-lucide="award" class="w-3.5 h-3.5" style="color:#00D4FF"></i> Certifications</span>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] max-w-2xl text-white">Officially <span class="bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">certified by Google</span>.</h2>
+        <div class="mt-4 inline-flex items-center gap-2 chip">
+          <svg width="16" height="16" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+          Verified Issuer / Google
+        </div>
+      </div>
+      <p class="text-base text-white/65 max-w-md">Every certificate is current and verifiable. I keep my expertise fresh so your campaigns stay on top of every algorithm change.</p>
+    </div>
+    <div id="certs-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="relative py-24 sm:py-28 bg-panel overflow-hidden">
+  <div class="pointer-events-none absolute -top-32 left-1/3 w-[420px] h-[420px] rounded-full bg-[#A855F7] opacity-15 blur-[140px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
+    <div class="relative">
+      <div class="absolute -top-4 -left-4 w-32 h-32 rounded-3xl bg-[#3D7BFF] opacity-30 blur-2xl"></div>
+      <div class="absolute -bottom-4 -right-4 w-40 h-40 rounded-full bg-[#A855F7] opacity-40 blur-2xl"></div>
+      <div class="relative glass-strong p-3 overflow-hidden">
+        <div class="relative rounded-2xl overflow-hidden border border-white/10">
+          <img src="https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/t0cv669e_WhatsApp%20Image%202026-05-23%20at%2011.11.41%20AM.jpeg" alt="Sharmin Sultana Ruby" class="w-full aspect-[4/5] object-cover object-center" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-4">
+            <div class="flex items-end justify-between gap-3">
+              <div>
+                <div class="font-display text-2xl font-bold text-white">Sharmin Sultana Ruby</div>
+                <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/70 mt-1">Google Ads Specialist</div>
+              </div>
+              <a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="inline-flex h-10 w-10 rounded-xl items-center justify-center bg-[#0A66C2] text-white hover:opacity-90 transition shrink-0"><i data-lucide="linkedin" class="w-[18px] h-[18px]"></i></a>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/55 backdrop-blur border border-white/15 text-[11px] font-bold uppercase tracking-wider text-white"><i data-lucide="badge-check" class="w-3 h-3" style="color:#00D4FF"></i> Certified Google Ads Expert</span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1DBF73]/95 text-[11px] font-bold uppercase tracking-wider text-black"><span class="g-dot" style="background:black"></span> Fiverr Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="chip"><span class="g-dot neon-dot"></span> About Me</span>
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] text-white">A specialist who lives <span class="bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">inside Google Ads</span>.</h2>
+      <div class="mt-7 space-y-4 text-[16px] leading-relaxed text-white/75 max-w-xl">
+        <p>Hi, I am Sharmin Sultana Ruby, a Certified Google Ads Expert and Fiverr Seller with hands-on experience managing campaigns across e-commerce, local services, education and professional services.</p>
+        <p>I do not just run ads. I study your market, understand your customer journey and build campaigns that speak directly to the people most likely to buy. Every decision is backed by data, not guesswork.</p>
+        <p>My clients appreciate that I am transparent, communicative and genuinely invested in their growth. <strong class="text-white">When your business wins, I win.</strong></p>
+      </div>
+      <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/70">
+        <span class="inline-flex items-center gap-2"><i data-lucide="globe-2" class="w-4 h-4" style="color:#00D4FF"></i> Worldwide Clients</span>
+        <span class="opacity-30">/</span>
+        <span class="inline-flex items-center gap-2">
+          <svg width="16" height="16" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+          Google Certified
+        </span>
+        <span class="opacity-30">/</span>
+        <a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-white transition"><i data-lucide="linkedin" class="w-4 h-4" style="color:#3D7BFF"></i> linkedin.com/in/shaarminruby</a>
+      </div>
+      <div class="mt-8">
+        <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55 mb-3">My Toolkit</div>
+        <div id="stack-grid" class="flex flex-wrap gap-2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="relative py-24 sm:py-28 bg-deep overflow-hidden">
+  <div class="absolute inset-0 grid-overlay opacity-15"></div>
+  <div class="pointer-events-none absolute -top-32 right-0 w-[480px] h-[480px] rounded-full bg-[#A855F7] opacity-15 blur-[120px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div>
+        <span class="chip"><span class="g-dot neon-dot"></span> Client Reviews</span>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] text-white">What my clients <span class="bg-gradient-to-r from-[#3D7BFF] to-[#A855F7] bg-clip-text text-transparent">actually say</span>.</h2>
+      </div>
+      <div class="flex items-center gap-3 text-white/75">
+        <div id="reviews-avatars" class="flex -space-x-2"></div>
+        <div class="text-sm font-semibold"><span class="text-white">5.0</span> / 7 Fiverr Seller reviews</div>
+      </div>
+    </div>
+    <div id="reviews-grid" class="columns-1 md:columns-2 lg:columns-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="relative py-24 sm:py-28 bg-deep overflow-hidden">
+  <div class="pointer-events-none absolute -top-32 -left-24 w-96 h-96 rounded-full bg-[#3D7BFF] opacity-20 blur-[120px]"></div>
+  <div class="pointer-events-none absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-[#A855F7] opacity-25 blur-[120px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 grid lg:grid-cols-[1fr_1.3fr] gap-10">
+    <div>
+      <span class="chip"><span class="g-dot neon-dot"></span> Get In Touch</span>
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.05] text-white">Let us talk about <span class="bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">your ads</span>.</h2>
+      <p class="mt-6 text-white/70 text-base max-w-md leading-relaxed">Ready to stop wasting ad spend? Tell me about your business and pick the services you need. I will send a custom plan within <strong class="text-white">24 hours</strong>.</p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-3">
+        <a href="https://wa.me/8801675472781?text=Hi%20Sharmin%2C%20I%20want%20a%20free%20Google%20Ads%20audit." target="_blank" rel="noreferrer" class="glass p-5 flex items-center gap-3">
+          <div class="h-11 w-11 rounded-2xl bg-[#25D366] text-black flex items-center justify-center shrink-0"><i data-lucide="message-circle" class="w-5 h-5"></i></div>
+          <div class="overflow-hidden"><div class="text-[11px] uppercase tracking-wider font-bold text-white/55">WhatsApp</div><div class="font-head font-bold text-sm text-white truncate">+8801675472781</div></div>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#e7948f86958a8e89c99592859ec98e898188a7808a868e8bc984888ad89492858d828493daa1958282c2d5d7a08888808b82c2d5d7a68394c2d5d7a692838e93" class="glass p-5 flex items-center gap-3">
+          <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-[#3D7BFF] to-[#A855F7] text-white flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></div>
+          <div class="overflow-hidden"><div class="text-[11px] uppercase tracking-wider font-bold text-white/55">Email</div><div class="font-head font-bold text-sm text-white truncate"><span class="__cf_email__" data-cfemail="8cffe4edfee1e5e2a2fef9eef5a2e5e2eae3ccebe1ede5e0a2efe3e1">[email&#160;protected]</span></div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" class="glass p-5 flex items-center gap-3 sm:col-span-2">
+          <div class="h-11 w-11 rounded-2xl bg-[#0A66C2] text-white flex items-center justify-center shrink-0"><i data-lucide="linkedin" class="w-5 h-5"></i></div>
+          <div class="overflow-hidden"><div class="text-[11px] uppercase tracking-wider font-bold text-white/55">LinkedIn</div><div class="font-head font-bold text-sm text-white truncate">linkedin.com/in/shaarminruby</div></div>
+        </a>
+      </div>
+      <div class="mt-6 glass p-5 flex items-center gap-3">
+        <div class="relative"><i data-lucide="clock" class="w-[22px] h-[22px]" style="color:#00D4FF"></i><span class="absolute -top-1 -right-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#34A853] live-dot"></span></div>
+        <div><div class="font-head font-bold text-white">Available 24/7</div><div class="text-[11px] text-white/55 uppercase tracking-wider font-semibold">Reach out anytime. Reply within minutes on WhatsApp.</div></div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -top-3 -right-3 w-24 h-24 rounded-3xl bg-[#A855F7] opacity-30 blur-2xl"></div>
+      <div class="absolute -bottom-3 -left-3 w-32 h-32 rounded-full bg-[#3D7BFF] opacity-30 blur-2xl"></div>
+      <div class="relative glass-strong p-6 sm:p-8">
+        <form id="lead-form" class="space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="font-display text-2xl font-bold text-white">Build your custom package</h3>
+            <span class="chip"><span class="g-dot neon-dot violet"></span> Free Audit</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label>Full Name *</label><input type="text" id="lf-name" placeholder="Jane Doe" required /></div>
+            <div><label>Email *</label><input type="email" id="lf-email" placeholder="you@company.com" required /></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label>WhatsApp</label><input type="text" id="lf-whatsapp" placeholder="+1 555 000 1234" /></div>
+            <div><label>Website</label><input type="text" id="lf-website" placeholder="https://yoursite.com" /></div>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div><label>Business Type</label><input type="text" id="lf-business" placeholder="e.g. HVAC, SaaS, Dental" /></div>
+            <div><label>Monthly Budget</label>
+              <select id="lf-budget">
+                <option value="">Select range</option>
+                <option>Under $500 / month</option>
+                <option>$500 to $1,500</option>
+                <option>$1,500 to $5,000</option>
+                <option>$5,000 to $15,000</option>
+                <option>$15,000+</option>
+              </select>
+            </div>
+            <div><label>Timeline</label>
+              <select id="lf-timeline">
+                <option value="">When?</option>
+                <option>ASAP</option>
+                <option>Within 2 weeks</option>
+                <option>Within a month</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Pick the services you need</label>
+            <div id="lf-services" class="mt-2.5 grid sm:grid-cols-2 gap-2"></div>
+          </div>
+          <div>
+            <label>What is your main goal?</label>
+            <textarea id="lf-goal" rows="4" placeholder="e.g. Get more qualified plumbing leads under $35 CPL..."></textarea>
+          </div>
+          <button type="submit" class="w-full pill pill-primary !justify-center !py-4 text-base">
+            <span id="lf-btn-text">Request my custom plan</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 nudge"></i>
+          </button>
+          <p class="text-[11px] text-white/45 text-center">Your info stays private. No spam, ever.</p>
+        </form>
+        <div id="lead-success" class="hidden text-center py-12">
+          <div class="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-[#3D7BFF] to-[#A855F7] flex items-center justify-center text-white text-3xl">✓</div>
+          <h3 class="font-display text-3xl font-bold mt-5 text-white" id="success-name">Thanks.</h3>
+          <p class="mt-3 text-white/65 max-w-md mx-auto">Your request is in. Expect a personalized reply with your audit checklist within 24 hours.</p>
+          <button type="button" id="lf-reset" class="mt-6 pill pill-ghost">Submit another request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative bg-[#06071A] text-white pt-16 pb-10 border-t border-white/5">
+  <div class="absolute inset-x-0 top-0 glow-line"></div>
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <svg width="32" height="32" viewBox="0 0 48 48"><g transform="rotate(-30 24 24)"><rect x="6" y="14" width="8" height="20" rx="3" fill="#4285F4"/><rect x="16" y="10" width="8" height="28" rx="3" fill="#FBBC04"/><rect x="26" y="6" width="8" height="36" rx="3" fill="#34A853"/><rect x="36" y="14" width="8" height="20" rx="3" fill="#EA4335"/></g></svg>
+          <div>
+            <div class="font-head font-extrabold text-lg">Sharmin <span class="bg-gradient-to-r from-[#00D4FF] to-[#A855F7] bg-clip-text text-transparent">Ruby</span></div>
+            <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55">Google Ads Specialist</div>
+          </div>
+        </div>
+        <p class="mt-5 text-sm text-white/65 max-w-sm leading-relaxed">Building, managing and scaling Google Ads campaigns that deliver measurable ROI for clients worldwide. Certified Google Ads Expert and Fiverr Seller.</p>
+        <div class="mt-4 inline-flex items-center gap-2 chip"><i data-lucide="clock" class="w-3 h-3" style="color:#00D4FF"></i> Available 24/7</div>
+      </div>
+      <div>
+        <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55 mb-4">Navigate</div>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="text-white/75 hover:text-white">Services</a></li>
+          <li><a href="#results" class="text-white/75 hover:text-white">Results</a></li>
+          <li><a href="#process" class="text-white/75 hover:text-white">Process</a></li>
+          <li><a href="#certifications" class="text-white/75 hover:text-white">Certifications</a></li>
+          <li><a href="#reviews" class="text-white/75 hover:text-white">Reviews</a></li>
+          <li><a href="#about" class="text-white/75 hover:text-white">About</a></li>
+          <li><a href="#contact" class="text-white/75 hover:text-white">Free Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-[11px] uppercase tracking-[0.22em] font-bold text-white/55 mb-4">Get In Touch</div>
+        <ul class="space-y-3 text-sm">
+          <li><a href="/cdn-cgi/l/email-protection#8bf8e3eaf9e6e2e5a5f9fee9f2a5e2e5ede4cbece6eae2e7a5e8e4e6b4f8fee9e1eee8ffb6cdf9eeeeaeb9bbcce4e4ece7eeaeb9bbcaeff8aeb9bbcafeefe2ff" class="inline-flex items-center gap-2 text-white/85 hover:text-white"><i data-lucide="mail" class="w-3.5 h-3.5" style="color:#3D7BFF"></i> <span class="__cf_email__" data-cfemail="a0d3c8c1d2cdc9ce8ed2d5c2d98ec9cec6cfe0c7cdc1c9cc8ec3cfcd">[email&#160;protected]</span></a></li>
+          <li><a href="https://wa.me/8801675472781?text=Hi%20Sharmin%2C%20I%20want%20a%20free%20Google%20Ads%20audit." target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-white/85 hover:text-white"><i data-lucide="message-circle" class="w-3.5 h-3.5" style="color:#25D366"></i> WhatsApp / +8801675472781</a></li>
+          <li><a href="https://www.linkedin.com/in/shaarminruby/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-white/85 hover:text-white"><i data-lucide="linkedin" class="w-3.5 h-3.5" style="color:#0A66C2"></i> linkedin.com/in/shaarminruby</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/55">
+      <span>© <span id="year"></span> Sharmin Sultana Ruby. All rights reserved.</span>
+      <div>Crafted with data, color and care.</div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ====== DATA ======
+  const INDUSTRIES = ["E-Commerce","HVAC","Plumbing","Dental","SaaS","Real Estate","Education","Legal","Home Services","Healthcare","Local Service","Coaching"];
+  const SERVICES = [
+    { id:"setup", title:"Campaign Setup and Launch", color:"#3D7BFF",
+      summary:"Built from scratch with keyword strategy, ad copy, structure and conversion tracking that drive results from day one.",
+      bullets:["In-depth Keyword Research","Search, Shopping, Display and Performance Max","Ad Copy Writing and Extensions","Conversion Tracking Setup","Google Analytics 4 Integration"] },
+    { id:"audit", title:"Account Audit and Optimization", color:"#A855F7",
+      summary:"Already running ads with poor results? I dig in, find what is draining budget, and fix it with data-driven precision.",
+      bullets:["Full Account Audit Report","Wasted Spend Analysis","Negative Keyword Expansion","Quality Score Improvement","Bid Strategy Optimization"] },
+    { id:"management", title:"Monthly Management", color:"#00D4FF",
+      summary:"Hands-on management every week. Testing, refining, scaling so your ROAS keeps growing month after month.",
+      bullets:["Weekly Performance Monitoring","A/B Ad Copy Testing","Budget and Bid Adjustments","Monthly Detailed Report","Monthly Strategy Call"] },
+  ];
+  const RESULTS = [
+    { tag:"Search Campaign", color:"#3D7BFF", client:"E-Commerce Store, Worldwide", sector:"Fashion and Apparel / Google Search Ads", metrics:[["4.6x","ROAS"],["-38%","CPC Drop"],["+210%","Revenue"]], note:"Restructured the entire campaign, tightened audience targeting, rewrote all ad copy. Revenue doubled in 8 weeks with the same budget." },
+    { tag:"Local Service Ads", color:"#A855F7", client:"HVAC Company", sector:"Home Services / Search and Call Ads", metrics:[["-52%","Cost/Lead"],["+280%","Calls"],["5.1x","ROAS"]], note:"Added call-only ads, tightened geo targeting to high-value zip codes, added 180+ negatives. Monthly calls went from 24 to 91 in 7 weeks." },
+    { tag:"Performance Max", color:"#00D4FF", client:"Online Course Platform", sector:"Education / Performance Max Campaign", metrics:[["$12","Cost/Sign-up"],["+340%","Enrollments"],["6.8x","ROAS"]], note:"Set up Performance Max from scratch with strong audience signals. Cost per enrollment dropped from $58 to $12 within 6 weeks." },
+    { tag:"Search Campaign", color:"#7C3AED", client:"Dental Practice", sector:"Healthcare / Google Search Ads", metrics:[["-44%","CPA Reduced"],["+195%","Appointments"],["4.2x","ROAS"]], note:"Rebuilt keyword structure, wrote intent-specific ad copy. Monthly appointments went from 19 to 56 in 45 days." },
+  ];
+  const STEPS = [
+    { n:"01", title:"Discovery Call", text:"I learn about your business, goals and current ad performance before recommending anything.", badge:"Free / 30 Min", color:"#3D7BFF", icon:"search" },
+    { n:"02", title:"Free Audit", text:"I review your campaigns and deliver a clear audit report with specific, actionable findings.", badge:"Within 48 Hours", color:"#A855F7", icon:"clipboard-list" },
+    { n:"03", title:"Build and Launch", text:"Campaigns are built, reviewed with you, then launched with daily monitoring for the first 7 days.", badge:"7-Day Monitoring", color:"#00D4FF", icon:"rocket" },
+    { n:"04", title:"Optimize and Scale", text:"Weekly optimization, monthly reporting and continuous A/B testing to improve and scale.", badge:"Ongoing Growth", color:"#7C3AED", icon:"trending-up" },
+  ];
+  const CERTIFICATIONS = [
+    { title:"Google Ads Search Certification", color:"#3D7BFF", issued:"May 11, 2026", expires:"May 11, 2027", id:"182055244",
+      image:"https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/49ai5zv5_WhatsApp%20Image%202026-05-23%20at%2011.11.38%20AM%20%281%29.jpeg" },
+    { title:"AI-Powered Shopping Ads Certification", color:"#A855F7", issued:"May 13, 2026", expires:"May 13, 2027", id:"182331332",
+      image:"https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/y2su8gcr_WhatsApp%20Image%202026-05-23%20at%2011.11.38%20AM%20%282%29.jpeg" },
+    { title:"AI-Powered Performance Ads Certification", color:"#00D4FF", issued:"May 12, 2026", expires:"May 12, 2027", id:"182196789",
+      image:"https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/l2odyhxf_WhatsApp%20Image%202026-05-23%20at%2011.11.39%20AM.jpeg" },
+    { title:"Google Ads Display Certification", color:"#7C3AED", issued:"May 12, 2026", expires:"May 12, 2027", id:"182188781",
+      image:"https://customer-assets.emergentagent.com/job_sharmin-ads-pro/artifacts/30ms8tbs_WhatsApp%20Image%202026-05-23%20at%2011.11.39%20AM%20%281%29.jpeg" },
+  ];
+  const REVIEWS = [
+    { name:"Jason Miller", role:"HVAC Business Owner", initials:"JM", text:"Sharmin helped improve our HVAC ads and brought in better quality leads. Easy to work with and very professional.", color:"#3D7BFF" },
+    { name:"Ryan Cooper", role:"Plumbing Business Owner", initials:"RC", text:"Great experience working with Sharmin for our plumbing business. Fast communication and solid Google Ads results.", color:"#A855F7" },
+    { name:"Eric", role:"Fiverr Seller Client", initials:"E", text:"Very friendly and did her job well. She made the adjustments we wanted very quickly and flawlessly! Would definitely recommend her and would definitely work with her again.", color:"#00D4FF" },
+    { name:"Chris Heller", role:"Fiverr Seller Client", initials:"CH", text:"Sharmin is a master in her field. Very experienced and the best I've ever worked with. I couldn't recommend her enough. Are you looking for the best Google Ad setup? Look no further, you've found the best. Thank you!", color:"#7C3AED" },
+    { name:"Charles Friedo", role:"Fiverr Seller Client", initials:"CF", text:"It is a joy to work with Sharmin! Her expertise and professionalism make it a breeze.", color:"#3D7BFF" },
+    { name:"Daniel", role:"Fiverr Seller Client", initials:"D", text:"Professional, loyal person and happy to help modestly. I recommend her as a person as well as a Google Ads Pro.", color:"#A855F7" },
+    { name:"Terrell", role:"Dental Practice Owner", initials:"T", text:"She is really ahead of the game. After a month her optimized spending, improved conversions, and has started to get quality leads in for my dental practice. I plan to continue working with her to see results grow further!", color:"#00D4FF" },
+  ];
+  const STACK = ["Google Search Ads","Shopping Campaign","Display Campaigns","Performance Max","Keyword Research","Conversion Tracking","Google Analytics 4","A/B Ad Testing","Bid Strategy","Negative Keywords","ROAS Optimization"];
+  const SERVICE_OPTS = ["Campaign Setup and Launch","Account Audit","Monthly Management","Performance Max","Shopping Campaign","Conversion Tracking (GA4)"];
+  const NEON_COLORS = ["#3D7BFF","#00D4FF","#A855F7","#7C3AED"];
+
+  // ====== RENDER ======
+  // Marquee
+  const mq = document.getElementById("marquee");
+  const mqColors = ["#4285F4","#FBBC04","#34A853","#EA4335","#A855F7","#00D4FF"];
+  [...INDUSTRIES, ...INDUSTRIES].forEach((s,i)=>{
+    const el = document.createElement("span");
+    el.className = "inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] text-white font-semibold text-sm";
+    el.innerHTML = `<span class="g-dot" style="background:${mqColors[i%mqColors.length]}"></span>${s}`;
+    mq.appendChild(el);
+  });
+
+  // Services
+  const svcGrid = document.getElementById("services-grid");
+  SERVICES.forEach((s,idx)=>{
+    const c = s.color;
+    const card = document.createElement("article");
+    card.className = "glass relative p-7 flex flex-col";
+    card.innerHTML = `
+      <div class="absolute top-0 left-7 right-7" style="height:3px;border-radius:0 0 999px 999px;background:linear-gradient(90deg, ${c}, transparent);box-shadow:0 0 24px ${c}"></div>
+      <div class="flex items-center justify-between">
+        <span class="font-mono text-[11px] uppercase tracking-[0.22em] font-bold text-white/55">0${idx+1} / Service</span>
+        <span class="g-dot" style="background:${c};box-shadow:0 0 12px ${c}"></span>
+      </div>
+      <h3 class="font-display text-2xl sm:text-3xl font-bold mt-5 leading-tight text-white">${s.title}</h3>
+      <p class="mt-3 text-[15px] text-white/65 leading-relaxed">${s.summary}</p>
+      <ul class="mt-6 space-y-2.5">
+        ${s.bullets.map(b=>`<li class="flex items-start gap-2.5 text-[14px] text-white/80">
+          <span class="mt-1 inline-flex w-4 h-4 rounded-full items-center justify-center" style="background:${c}"><i data-lucide="check" class="w-[11px] h-[11px] text-white"></i></span>
+          <span>${b}</span></li>`).join("")}
+      </ul>
+      <a href="#contact" class="mt-7 inline-flex items-center justify-between gap-2 group text-white">
+        <span class="font-head font-bold">Get a custom quote</span>
+        <span class="inline-flex items-center justify-center h-9 w-9 rounded-full" style="background:${c};box-shadow:0 0 20px ${c}"><i data-lucide="arrow-up-right" class="w-4 h-4 text-white"></i></span>
+      </a>`;
+    svcGrid.appendChild(card);
+  });
+
+  // Results
+  const rGrid = document.getElementById("results-grid");
+  RESULTS.forEach((r,i)=>{
+    const c = r.color;
+    const card = document.createElement("article");
+    card.className = "glass p-7";
+    card.innerHTML = `
+      <div class="flex items-center justify-between">
+        <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-bold" style="color:${c}">
+          <span class="g-dot" style="background:${c};box-shadow:0 0 12px ${c}"></span>${r.tag}
+        </span>
+        <span class="text-[11px] text-white/45 font-mono">CASE 0${i+1}</span>
+      </div>
+      <h3 class="font-display text-2xl sm:text-3xl font-bold mt-4 text-white">${r.client}</h3>
+      <div class="text-sm text-white/55 mt-1">${r.sector}</div>
+      <div class="mt-7 grid grid-cols-3 gap-4">
+        ${r.metrics.map(m=>`<div class="border-t border-white/10 pt-3"><div class="num-xl text-3xl sm:text-4xl" style="color:${c}">${m[0]}</div><div class="text-[10px] uppercase tracking-wider font-semibold text-white/55 mt-1">${m[1]}</div></div>`).join("")}
+      </div>
+      <p class="mt-6 text-[14.5px] text-white/75 leading-relaxed">${r.note}</p>`;
+    rGrid.appendChild(card);
+  });
+
+  // Process
+  const pGrid = document.getElementById("process-grid");
+  STEPS.forEach(s=>{
+    const c = s.color;
+    const el = document.createElement("div");
+    el.className = "glass p-6 relative";
+    el.innerHTML = `
+      <div class="flex items-start justify-between">
+        <div class="font-display text-5xl font-bold leading-none" style="color:${c};text-shadow:0 0 30px ${c}55">${s.n}</div>
+        <div class="h-10 w-10 rounded-2xl flex items-center justify-center border" style="background:${c}1A;border-color:${c}55"><i data-lucide="${s.icon}" class="w-[18px] h-[18px]" style="color:${c}"></i></div>
+      </div>
+      <h3 class="font-head font-extrabold text-xl mt-5 text-white">${s.title}</h3>
+      <p class="mt-2 text-[14.5px] text-white/65 leading-relaxed">${s.text}</p>
+      <div class="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-wider font-bold rounded-full px-3 py-1.5 border" style="color:${c};border-color:${c}55;background:${c}14">
+        <span class="g-dot" style="background:${c}"></span>${s.badge}
+      </div>`;
+    pGrid.appendChild(el);
+  });
+
+  // Certifications
+  const cGrid = document.getElementById("certs-grid");
+  CERTIFICATIONS.forEach(ct=>{
+    const c = ct.color;
+    const card = document.createElement("article");
+    card.className = "glass relative overflow-hidden group";
+    card.innerHTML = `
+      <div class="absolute top-0 left-0 right-0" style="height:4px;background:linear-gradient(90deg, transparent, ${c}, transparent);box-shadow:0 0 20px ${c}"></div>
+      <div class="relative overflow-hidden">
+        <div class="bg-white" style="aspect-ratio:1/1">
+          <img src="${ct.image}" alt="${ct.title}" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
+        </div>
+        <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(180deg, transparent 50%, ${c}1A 100%)"></div>
+      </div>
+      <div class="p-5">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md" style="color:${c};background:${c}14;border:1px solid ${c}44">
+            <i data-lucide="badge-check" class="w-3 h-3"></i> Verified
+          </span>
+          <span class="font-mono text-[10px] text-white/45">ID ${ct.id}</span>
+        </div>
+        <h3 class="font-head font-extrabold text-[15.5px] text-white mt-3 leading-snug">${ct.title}</h3>
+        <div class="mt-4 space-y-1.5 text-[11px] text-white/65">
+          <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-[11px] h-[11px] text-white/40"></i><span class="font-semibold text-white/85">Issued</span><span class="ml-auto">${ct.issued}</span></div>
+          <div class="flex items-center gap-2"><i data-lucide="calendar" class="w-[11px] h-[11px] text-white/40"></i><span class="font-semibold text-white/85">Expires</span><span class="ml-auto">${ct.expires}</span></div>
+          <div class="flex items-center gap-2"><i data-lucide="hash" class="w-[11px] h-[11px] text-white/40"></i><span class="font-semibold text-white/85">Issuer</span><span class="ml-auto">Google</span></div>
+        </div>
+      </div>`;
+    cGrid.appendChild(card);
+  });
+
+  // Stack
+  const stackGrid = document.getElementById("stack-grid");
+  STACK.forEach((t,i)=>{
+    const c = NEON_COLORS[i%NEON_COLORS.length];
+    const el = document.createElement("span");
+    el.className = "inline-flex items-center gap-2 px-3.5 py-2 rounded-full border border-white/10 bg-white/[0.03] text-sm font-semibold text-white";
+    el.innerHTML = `<span class="g-dot" style="background:${c};box-shadow:0 0 10px ${c}"></span>${t}`;
+    stackGrid.appendChild(el);
+  });
+
+  // Reviews
+  const revGrid = document.getElementById("reviews-grid");
+  REVIEWS.forEach((r,i)=>{
+    const c = r.color;
+    const large = i === 3 ? "md:p-8" : "";
+    const card = document.createElement("article");
+    card.className = `glass relative p-6 break-inside-avoid mb-6 ${large}`;
+    card.innerHTML = `
+      <i data-lucide="quote" class="absolute top-5 right-5 w-7 h-7 opacity-40" style="color:${c}"></i>
+      <div class="flex items-center gap-1" style="color:#FBBF24">
+        ${'<i data-lucide="star" class="w-3.5 h-3.5" style="fill:currentColor;stroke:currentColor"></i>'.repeat(5)}
+      </div>
+      <p class="mt-4 text-white/85 leading-relaxed ${i===3?'text-lg':'text-[15.5px]'}">&ldquo;${r.text}&rdquo;</p>
+      <div class="mt-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full flex items-center justify-center font-head font-extrabold text-white text-sm" style="background:${c};box-shadow:0 0 14px ${c}66">${r.initials}</div>
+          <div><div class="font-head font-bold text-white text-sm">${r.name}</div><div class="text-xs text-white/55">${r.role}</div></div>
+        </div>
+        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-md bg-[#1DBF73]/90"><span class="text-white text-base leading-none">●</span>Fiverr Seller</span>
+      </div>`;
+    revGrid.appendChild(card);
+  });
+  // Avatars row
+  const avRow = document.getElementById("reviews-avatars");
+  REVIEWS.slice(0,5).forEach(r=>{
+    const av = document.createElement("div");
+    av.className = "h-9 w-9 rounded-full border-2 border-[#0C0A24] flex items-center justify-center text-[11px] font-extrabold text-white";
+    av.style.background = r.color;
+    av.textContent = r.initials;
+    avRow.appendChild(av);
+  });
+
+  // Lead form service options
+  const svcOptsEl = document.getElementById("lf-services");
+  const selected = new Set();
+  SERVICE_OPTS.forEach((opt,i)=>{
+    const c = NEON_COLORS[i%NEON_COLORS.length];
+    const id = `svc-${i}`;
+    const lbl = document.createElement("label");
+    lbl.className = "svc-pill";
+    lbl.innerHTML = `<input type="checkbox" data-svc="${opt}" id="${id}"><span class="g-dot" style="background:${c};box-shadow:0 0 10px ${c}"></span><span class="text-sm font-semibold text-white">${opt}</span>`;
+    lbl.addEventListener("click", (e)=>{
+      const cb = lbl.querySelector("input");
+      if (e.target.tagName !== "INPUT") { cb.checked = !cb.checked; }
+      if (cb.checked) { selected.add(opt); lbl.classList.add("active"); }
+      else { selected.delete(opt); lbl.classList.remove("active"); }
+    });
+    svcOptsEl.appendChild(lbl);
+  });
+
+  // Toast helper
+  function toast(msg, type="success") {
+    const el = document.createElement("div");
+    el.className = `u-toast ${type}`;
+    el.textContent = msg;
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(), 3800);
+  }
+
+  // Form submit -> opens WhatsApp + mailto (works without backend)
+  document.getElementById("lead-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = document.getElementById("lf-name").value.trim();
+    const email = document.getElementById("lf-email").value.trim();
+    if (!name || !email) { toast("Name and Email are required","error"); return; }
+
+    const whatsapp = document.getElementById("lf-whatsapp").value.trim();
+    const website = document.getElementById("lf-website").value.trim();
+    const business = document.getElementById("lf-business").value.trim();
+    const budget = document.getElementById("lf-budget").value;
+    const timeline = document.getElementById("lf-timeline").value;
+    const goal = document.getElementById("lf-goal").value.trim();
+    const services = Array.from(selected).join(", ");
+
+    const msg =
+`New Lead Request
+
+Name: ${name}
+Email: ${email}
+WhatsApp: ${whatsapp || "-"}
+Website: ${website || "-"}
+Business Type: ${business || "-"}
+Monthly Budget: ${budget || "-"}
+Timeline: ${timeline || "-"}
+Services: ${services || "-"}
+
+Goal:
+${goal || "-"}`;
+
+    const wa = `https://wa.me/8801675472781?text=${encodeURIComponent(msg)}`;
+    const mt = `mailto:sharmin.ruby.info@gmail.com?subject=${encodeURIComponent("New Lead - " + name)}&body=${encodeURIComponent(msg)}`;
+
+    // Open WhatsApp (primary), and email as fallback
+    window.open(wa, "_blank", "noopener,noreferrer");
+    setTimeout(()=>{ window.location.href = mt; }, 400);
+
+    document.getElementById("success-name").textContent = "Thanks, " + name.split(" ")[0] + ".";
+    document.getElementById("lead-form").classList.add("hidden");
+    document.getElementById("lead-success").classList.remove("hidden");
+    toast("Lead opened in WhatsApp. Sharmin will reply within 24 hours.","success");
+  });
+
+  document.getElementById("lf-reset").addEventListener("click", ()=>{
+    document.getElementById("lead-form").reset();
+    selected.clear();
+    document.querySelectorAll(".svc-pill").forEach(p=>p.classList.remove("active"));
+    document.getElementById("lead-success").classList.add("hidden");
+    document.getElementById("lead-form").classList.remove("hidden");
+  });
+
+  // Mobile menu
+  const mb = document.getElementById("mobile-toggle");
+  const mm = document.getElementById("mobile-menu");
+  mb.addEventListener("click", ()=> mm.classList.toggle("hidden"));
+  mm.querySelectorAll("a").forEach(a=>a.addEventListener("click", ()=>mm.classList.add("hidden")));
+
+  // Sticky nav shadow
+  const navbar = document.getElementById("navbar");
+  const pill = document.getElementById("navbar-pill");
+  window.addEventListener("scroll", ()=>{
+    if (window.scrollY > 24) { navbar.classList.add("py-2"); navbar.classList.remove("py-4"); pill.style.boxShadow = "0 18px 60px -30px rgba(124,58,237,0.65)"; }
+    else { navbar.classList.add("py-4"); navbar.classList.remove("py-2"); pill.style.boxShadow = ""; }
+  });
+
+  // Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Lucide icons render
+  if (window.lucide) lucide.createIcons();
+
+  // Re-run lucide after dynamic injections
+  setTimeout(()=>{ if (window.lucide) lucide.createIcons(); }, 100);
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
